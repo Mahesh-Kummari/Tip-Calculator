@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahesh | Tip Calculator</title>
+    <meta name="description" content="Calculate tips easily with our tip calculator website. Enter the bill amount, select the tip percentage, and get the total bill including tip.">
+    <link rel="stylesheet" href="tip.css">
+</head>
+<body >
+    <div class="background">
+
+        <form class="card" action="">
+            <h1 class="heading">Tip Calculator</h1>
+            <p class="tag-line">Easily calculate your tip amount for each person.</p>
+            <hr>
+            <label for="bill" class="label" >How much was your bill?</label>
+            <br/>
+            <input type="text" id="bill"  placeholder="Please enter total bill (₹)" required />
+            <br/>
+
+            <label for="service" class="label">How was your service?</label>
+            <br/>
+            <select id="service" class="service">
+                <option value="30" >30% -Outstanding</option>
+                <option value="20">20% -Good</option>
+                <option value="15">15% -It was okay</option>
+                <option value="10">10% -Bad</option>
+                <option value="5">5% -Terrible</option>
+                <option value="0">0% -No tip</option>
+            </select>
+            <br/>
+            <label for="people"  class="label">How many people sharing the bill?</label>
+            <br/>
+            <input type="text" id="people"  placeholder="Please enter number of people sharing" required />
+            <p class="show-tip" id="showTip"></p>
+            <input id="calculate" type="Submit" value="Calculate">
+            <input type="reset" class="reset-btn" >
+            
+        </form>
+    </div>
+    <script src="tip.js"></script>
+</body>
+</html>
